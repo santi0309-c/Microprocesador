@@ -259,13 +259,6 @@ Anduvo. Usando los mismos operandos que el Caso 9, el resultado de OR (0x0FFF0FF
 
 ---
 
-## Notas generales / pendientes
-- La sintaxis de operandos usada (`mnemonic rd, rs, rt` / `mnemonic rd, rt, aux`, destino primero) se infiere del ejemplo dado en clase (`add $1, $2, $3`) y de la convención habitual en ISAs tipo MIPS. **Conviene confirmarla contra el ensamblador real** antes de dar por buenos los casos, ya que el manual solo documenta el orden de los campos en la codificación binaria (rs, rt, rd, aux), no necesariamente el orden textual en el mnemonic.
-- Los índices asumidos para los registros especiales en `CFS`/`CTS` (Casos 7 y 8) son una suposición basada en el orden de aparición en el manual (psw=0, ecr=1, epc=2, bva=3, vbr=4) y deben confirmarse empíricamente — por eso quedan marcados como pendientes de completar en la sección de Conclusiones.
-- `SLLR`, `SRLR`, `SRAR` no tienen campo `aux`; el monto de shift sale de R[rs][4:0], por eso las precondiciones cargan el shift amount en un registro en vez de como constante.
-
----
-
 # Caso 11
 
 ## Descripción
