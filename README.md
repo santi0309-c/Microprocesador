@@ -1,4 +1,4 @@
-# Casos de Prueba — Instrucciones Tipo R (1 a 21)
+# Casos de Prueba — Instrucciones Tipo R (1 a 32)
 ### RTM32 / STX4 — Testing de instruction set
 
 # Caso 1
